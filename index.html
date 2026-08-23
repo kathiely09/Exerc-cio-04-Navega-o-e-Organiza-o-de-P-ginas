@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tabela de chamados e ordens de serviço com cabeçalhos e status acessíveis.">
+    <title>Registros e Status - Portal DS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registros de Atendimento</h1>
+        <p>Consulte os chamados, responsáveis, prioridades, prazos e situações atuais.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="titulo-registros">
+            <h2 id="titulo-registros">Chamados da equipe de suporte</h2>
+            <p>Os estados são apresentados por texto para que a informação não dependa apenas de cores.</p>
+
+            <div class="table-scroll" role="region" aria-label="Tabela rolável de chamados" tabindex="0">
+                <table>
+                    <caption>Ordens de serviço registradas em agosto de 2026</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Responsável</th>
+                            <th scope="col">Prioridade</th>
+                            <th scope="col">Prazo</th>
+                            <th scope="col">Situação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr tabindex="0">
+                            <td>OS-031</td>
+                            <td>Ana Ribeiro</td>
+                            <td>Alta</td>
+                            <td><time datetime="2026-08-06">06/08/2026</time></td>
+                            <td><span class="status">Em atendimento</span></td>
+                        </tr>
+
+                        <tr tabindex="0">
+                            <td>OS-032</td>
+                            <td>Bruno Lima</td>
+                            </tr>
+      <tr tabindex="0">
+        <td>OS-032</td>
+        <td>Bruno Lima</td>
+        <td>Média</td>
+        <td><time datetime="2026-08-08">08/08/2026</time></td>
+        <td><span class="status">Aguardando usuário</span></td>
+      </tr>
+      <tr tabindex="0">
+        <td>OS-033</td>
+        <td>Carla Souza</td>
+        <td>Baixa</td>
+        <td><time datetime="2026-08-12">12/08/2026</time></td>
+        <td><span class="status">Planejado</span></td>
+      </tr>
+      <tr tabindex="0">
+        <td>OS-034</td>
+        <td>Diego Martins</td>
+        <td>Alta</td>
+        <td><time datetime="2026-08-05">05/08/2026</time></td>
+        <td><span class="status">Concluído</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</section>
+</main>
+
+<footer>
+  <p>Projeto educacional - 3DS - Programação no Desenvolvimento de Sistemas</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
